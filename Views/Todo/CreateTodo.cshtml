@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create Todo</h2>
+
+<h3>Enter Todo</h3>
+<form method="POST" asp-controller="Todo" asp-action="ProcessCreateTodo">
+    <input name="description" type="text" >
+    <button type="submit">Submit</button>
+</form>
